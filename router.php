@@ -1,7 +1,6 @@
 <?php
 declare(strict_types=1);
 use BaseApi\{Router, RouterException};
-
 require_once 'vendor/autoload.php';
 require_once 'model/twilio/capability/TwilioCapability.php';
 
