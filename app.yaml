@@ -7,11 +7,3 @@ handlers:
 - url: /.*
   script: auto
   secure: always
-
-- url: /assets
-  static_dir: assets
-
-# Serve static files as static resources.
-- url: /(.+\.(gif|png|jpg|svg|webp|mp3|jpeg|js))$
-  static_files: \1
-  upload: .+\.(gif|png|jpg|svg|webp|mp3|jpeg|js)$

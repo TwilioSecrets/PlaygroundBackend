@@ -1,0 +1,16 @@
+name: Release CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Deploy to the App Engine App "twilioplayground"
+      run: |
+        gcloud auth activate-service-account ${{ secrets.GCP_SERVICE_ACCOUNT }} --key-file ${{ secrets.GCP_KEYFILE }}
+        gcloud config set project ${{ secrets.GCP_PROJECT }}
+        gcloud beta app deploy --no-cache
