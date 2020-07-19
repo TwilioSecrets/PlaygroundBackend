@@ -1,0 +1,51 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f5aaeef03ce6c1b0409f077127069c50",
+    "packages": [
+        {
+            "name": "adammcgurk/shine-php",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mcgurk-Adam/ShinePHP.git",
+                "reference": "cbe8e3fcb6e7f9f01e6b72266907b03f2315e3a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mcgurk-Adam/ShinePHP/zipball/cbe8e3fcb6e7f9f01e6b72266907b03f2315e3a2",
+                "reference": "cbe8e3fcb6e7f9f01e6b72266907b03f2315e3a2",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ShinePHP\\": "src/ShinePHP/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam McGurk",
+                    "email": "amcgurk@shinesolar.com"
+                }
+            ],
+            "description": "A simple PHP library to help speed development through the monotonous part of PHP programming (dealing with user input, DB connections, HTTP, etc...)",
+            "time": "2020-04-07T17:11:12+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

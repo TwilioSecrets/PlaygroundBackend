@@ -1,0 +1,6 @@
+{
+    "require": {
+        "adammcgurk/base-api": "^1.5",
+        "twilio/sdk": "^6.9"
+    }
+}

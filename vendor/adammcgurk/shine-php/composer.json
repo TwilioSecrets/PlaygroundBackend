@@ -1,0 +1,19 @@
+{
+    "name": "adammcgurk/shine-php",
+    "description": "A simple PHP library to help speed development through the monotonous part of PHP programming (dealing with user input, DB connections, HTTP, etc...)",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability":"stable",
+    "authors": [
+        {
+            "name": "Adam McGurk",
+            "email": "amcgurk@shinesolar.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ShinePHP\\": "src/ShinePHP/"
+        }
+    },
+    "require": {}
+}
