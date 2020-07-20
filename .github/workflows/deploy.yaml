@@ -11,6 +11,8 @@ jobs:
     - uses: actions/checkout@v1
     - name: Deploy to the App Engine App "twilioplayground"
       run: |
+        echo '${{ secrets.GCP_KEY }}' > ${{ secrets.GCP_KEYFILE }}
         gcloud auth activate-service-account ${{ secrets.GCP_SERVICE_ACCOUNT }} --key-file ${{ secrets.GCP_KEYFILE }}
         gcloud config set project ${{ secrets.GCP_PROJECT }}
         gcloud beta app deploy --no-cache
+        rm -rf ${{ secrets.GCP_KEYFILE }}
