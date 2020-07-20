@@ -3,7 +3,7 @@ declare(strict_types=1);
 use BaseApi\{Api, ApiException};
 use ShinePHP\Http\{IncomingRequest, IncomingRequestException};
 
-\header('Access-Control-Allow-Origin: http://localhost:4500');
+\header('Access-Control-Allow-Origin: https://twiliosecrets.com/, https://codepen.io/');
 \header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 \header('Access-Control-Allow-Headers: Content-Type');
 \header('Allow: application/json');
