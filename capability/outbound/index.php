@@ -1,6 +1,19 @@
 <?php
 declare(strict_types=1);
 use BaseApi\{Api, ApiException};
+use ShinePHP\Http\{IncomingRequest, IncomingRequestException};
+
+\header('Access-Control-Allow-Origin: http://localhost:4500');
+\header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+\header('Access-Control-Allow-Headers: Content-Type');
+\header('Allow: application/json');
+\header('Content-Type: application/json');
+
+// F you cors
+if (IncomingRequest::validate_request_method('OPTIONS')) {
+	\header($_SERVER['SERVER_PROTOCOL'].' 200 OK');
+	exit;
+}
 
 try {
 	$api = new Api('POST');
@@ -22,5 +35,5 @@ try {
 }
 
 echo Api::output(true, 'Returned Token', array(
-	'key' => $capability->outgoing_capability($input['app_sid'])
+	'token' => $capability->outgoing_capability($input['app_sid'])
 ));
